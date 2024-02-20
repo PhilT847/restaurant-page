@@ -3,9 +3,9 @@ import { createAboutTab } from "./about-tab.js";
 import { createMenuTab } from "./menu-tab.js";
 import { createContactTab } from "./contact-tab.js";
 
-const pageHandler = () => {
+const pageHandler = (function () {
 
-    const mainContent = document.getElementById("content");
+    let mainContent = document.getElementById("content");
 
     // Set initial tab and open about tab
     let currentTab = 0;
@@ -36,6 +36,9 @@ const pageHandler = () => {
                 mainContent.appendChild(createContactTab());
                 break;
         }
-    } 
-};
+    }
+
+    return { mainContent };
+
+})();
 
