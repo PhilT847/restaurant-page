@@ -1,0 +1,7 @@
+function createContactTab() {
+
+}
+
+export {
+    createContactTab
+};
