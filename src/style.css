@@ -1,2 +1,31 @@
 /* Meyer reset from NPM package reset-css */
 @import "../node_modules/reset-css/reset.css";
+
+body {
+    display: grid;
+    grid-template-rows: 12em 1fr;
+}
+
+.header-text, .header-nav, #content {
+    padding: 0 20vw;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-text {
+    color: white;
+    background-color: black;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: red;
+}
+
+.header-button {
+
+}
