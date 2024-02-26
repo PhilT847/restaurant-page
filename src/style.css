@@ -27,5 +27,6 @@ header {
 }
 
 .header-button {
-
+    background: none;
+    border: none;
 }
