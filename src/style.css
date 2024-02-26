@@ -3,7 +3,12 @@
 
 body {
     display: grid;
-    grid-template-rows: 12em 1fr;
+    grid-template-rows: 10em 1fr;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2em;
 }
 
 .header-text, .header-nav, #content {
@@ -12,21 +17,57 @@ body {
 
 header {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 4em;
 }
 
 .header-text {
+    display: flex;
+    justify-content: space-between;
     color: white;
     background-color: black;
+    line-height: 6em;
+}
+
+.italics {
+    font-style: italic;
 }
 
 .header-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    gap: 64px;
     color: red;
 }
 
 .header-button {
+    font-size: 1.25em;
+    width: 8em;
     background: none;
     border: none;
+}
+
+.content-object {
+    background-color: rgb(255,240,200);
+    padding: 24px;
+}
+
+.menu-tab {
+
+}
+
+/* smaller screens */
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 1em;
+    }
+
+    .italics {
+        display: none;
+    }
+
+    .header-nav {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
