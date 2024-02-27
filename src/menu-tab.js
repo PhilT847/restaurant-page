@@ -6,7 +6,21 @@ function createMenuTab() {
 
     // Add content
     createItemCategory(tab, "Pizzas");
-    createItem(tab, "Plain Pizza", 19.99);
+    createItem(tab, "Small Pizza", 12.99);
+    createItem(tab, "Medium Pizza", 15.99);
+    createItem(tab, "Large Pizza", 18.99);
+    createItem(tab, "Add Toppings", "+1.99");
+
+    createItemCategory(tab, "Sides");
+    createItem(tab, "French Fries", 3.99);
+    createItem(tab, "Pizza Fries", 4.49);
+    createItem(tab, "Onion Rings", 3.99);
+    createItem(tab, "Chicken Tenders", 6.99);
+
+    createItemCategory(tab, "Beverages");
+    createItem(tab, "2L Soda", 3.99);
+    createItem(tab, "Specialty Soda", 2.99);
+    createItem(tab, "Milkshake", 4.99);
 
     return tab;
 }

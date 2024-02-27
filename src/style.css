@@ -62,12 +62,13 @@ header {
 
 .content-tab {
     background-color: rgb(255,240,200);
-    padding: 24px;
+    padding: 64px;
 }
 
 .menu-tab {
     display: grid;
     grid-template-columns: 6fr 1fr;
+    row-gap: 24px;
 }
 
 .menu-header {
