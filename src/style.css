@@ -95,7 +95,6 @@ header {
     row-gap: 12px;
     column-gap: 24px;
     background-color: rgb(255, 209, 166);
-    border: 2px solid black;
 }
 
 .right-align {
