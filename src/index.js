@@ -2,7 +2,6 @@ import "./style.css";
 import { createAboutTab } from "./about-tab.js";
 import { createMenuTab } from "./menu-tab.js";
 import { createContactTab } from "./contact-tab.js";
-import pizzaImage from "./ivan-torres-pizza.jpg";
 
 const pageHandler = (function () {
 

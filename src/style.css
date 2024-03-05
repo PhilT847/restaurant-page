@@ -63,12 +63,43 @@ header {
 .content-tab {
     display: grid;
     row-gap: 48px;
+    column-gap: 24px;
     background-color: rgb(255,240,200);
     padding: 64px;
 }
 
-.menu-section, .contact-section {
+.about-tab {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-section, .menu-section, .contact-section {
     display: grid;
+}
+
+.about-tab p, .about-tab h2 {
+    grid-column: 1/3;
+}
+
+.about-header, .contact-header {
+    font-weight: 800;
+}
+
+.about-header {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.about-section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 24px;
+    row-gap: 12px;
+    column-gap: 24px;
+    background-color: rgb(255, 209, 166);
+    border: 2px solid black;
+}
+
+.right-align {
+    text-align: right;
 }
 
 .menu-section {
@@ -86,10 +117,6 @@ header {
 
 .contact-section {
     row-gap: 12px;
-}
-
-.contact-header {
-    font-weight: 800;
 }
 
 /* smaller screens */
