@@ -120,7 +120,7 @@ header {
 @media only screen and (max-width: 800px) {
 
     body {
-        grid-template-rows: 8em 1fr;
+        grid-template-rows: 6em 1fr;
     }
 
     .header-text, .header-nav, #content {
@@ -149,7 +149,6 @@ header {
     }
 
     .header-button {
-        height: 2em;
         width: 4em;
     }
 
