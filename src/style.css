@@ -2,13 +2,11 @@
 @import "../node_modules/reset-css/reset.css";
 
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100vw;
     display: grid;
     grid-template-rows: 10em 1fr;
+    row-gap: 36px;
     background: url('./ivan-torres-pizza.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,7 +29,7 @@ h2 {
 
 header {
     display: grid;
-    grid-template-rows: 1fr 4em;
+    grid-template-rows: 6em 1fr;
 }
 
 .header-text {
@@ -50,13 +48,13 @@ header {
     display: flex;
     justify-content: center;
     gap: 64px;
-    color: red;
+    background-color: rgba(255, 209, 166, 0.9);
 }
 
 .header-button {
     font-size: 1.25em;
     width: 8em;
-    background: none;
+    background-color: rgb(255, 209, 166);
     border: none;
 }
 
