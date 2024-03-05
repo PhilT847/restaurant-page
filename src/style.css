@@ -155,4 +155,17 @@ header {
         height: 2em;
         width: 4em;
     }
+
+    .about-section {
+        grid-column: span 2;
+        grid-template-columns: 1fr;
+    }
+
+    .about-section div {
+        text-align: center;
+    }
+
+    .about-header {
+        grid-column: span 1;
+    }
 }
